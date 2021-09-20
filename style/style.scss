@@ -19,9 +19,20 @@ p{
   background-size: cover;
   height: 100vh;
   display: flex;
+  position: relative;
+  #canvas{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+  }
   .logo-wrap {
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     padding: 0 20px;
   }
 }
