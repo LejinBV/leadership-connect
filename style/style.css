@@ -239,6 +239,7 @@ p {
 
 .agenda .tab-wrap {
   padding: 0 2.5rem;
+  padding-left: 0;
 }
 
 @media (max-width: 767px) {
