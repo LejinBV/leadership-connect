@@ -30,18 +30,63 @@ p{
   .navbar-brand{
     margin-left: auto;
   }
+  .navbar-nav{
+    padding-left: 80px;
+    .nav-item{
+      margin-right: 15px;
+      a.home{
+        background:$m-blue;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80px;
+        bottom: 0;
+        text-align: center;
+        font-size: 35px;
+        line-height: 56px;
+      }
+      a.nav-link{
+        color: $white;
+      }
+    }
+  }
+  .mb-home{
+    background:$m-blue;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    bottom: 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 75px;
+    text-decoration: none;
+  }
 }
 .ceo-msg{
   padding: 5% 0;
   background: lighten($l-blue, 20%);
+  span.icon-quotes.quote-icon {
+    font-size: 60px;
+    margin-left: -8px;
+  }
   .msg-wrap{
     margin: auto;
+    @media (max-width:767px) {
+      margin-top: 50px;
+    }
     .ceo-wrap{
       margin: auto;
-      max-width: 400px;
+      width: 400px;
       height: 400px;
       border-radius: 50%;
       overflow: hidden;
+      @media (max-width:767px) {
+        width: 270px;
+        height: 270px;
+      }
       img{
         object-fit: cover;
       -o-object-position: center;
@@ -53,6 +98,10 @@ p{
     .ceo-message{
       margin-top: auto;
       margin-bottom: auto;
+      @media (max-width:767px) {
+        margin-top: 50px;
+        padding: 0 40px;
+      }
     }
   }
 }
@@ -60,10 +109,14 @@ p{
 .agenda{
   overflow: hidden;
   padding: 60px 0;
+  
   .agenda-img{
     margin: auto;
     max-width: 350px;
     padding: 80px 0;
+    @media (max-width:767px) {
+      max-width: 270px;
+    }
   }
   .download{
     display: block;
@@ -85,8 +138,42 @@ p{
       font-size: 20px;
       margin-left: 15px;
     }
+    @media (max-width:767px) {
+      margin-top: 50px;
+      padding-left: 80px;
+      padding-right: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+      background: $s-red;
+      margin: 0;
+      color:$white;
+      font-size: 16px;
+      span{
+        color:$white;
+        font-size: 50px;
+        position: absolute;
+        left: 23px;
+        bottom: 50%;
+        line-height: 1;
+        margin-bottom: -25px;
+      }
+      small{
+        right: 20px;
+        top: 50%;
+        margin-top: -15px;
+        position: absolute;
+        color:$white;
+      }
+    }
   }
   .tab-wrap{
+    padding: 0 2.5rem;
+    @media (max-width:767px) {
+      padding: 0;
+    }
+    
     .nav.nav-tabs{
       margin-bottom: -1px;
     }
@@ -117,12 +204,29 @@ p{
       .table-wrap{
         border: 1px solid $s-red;
         padding: 2.875rem;
-        padding-bottom: 0;
+        padding-bottom: 1.5rem;
         padding-top: 1.5rem;
+        @media (max-width:767px) {
+          padding: 1.5rem;
+        }
         h3.row{
           font-size: 1.25rem;
           font-weight: bold;
           border-bottom: 1px solid $black;
+          @media (max-width:767px) {
+            display: none;
+            
+          }
+        }
+        @media (max-width:767px) {
+          .res-title{
+            font-size: 1.25rem;
+            font-weight: bold;
+          }
+          .col-sm-2{
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
         }
         .row{
           font-size: 1.25;
@@ -142,6 +246,10 @@ p{
     background: $black;
     padding: 100px 30px;
     padding-top: 150px;
+    @media (max-width:767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     article{
       ul{
         display: inline-block;
@@ -154,11 +262,20 @@ p{
           margin: 0;
           display: inline-block;
           padding: 0;
+          @media (max-width:767px) {
+            margin-bottom: 25px;
+          }
           a{
             color: $white;
             text-decoration: none;
             margin: 15px;
             padding: 20px;
+            @media (max-width:767px) {
+              padding-left: 12px;
+              padding-right: 12px;
+              margin: 0;
+              flex: 16px;
+            }
           }
         }
       }
@@ -181,5 +298,10 @@ p{
     color: $white;
     text-align: center;
     padding: 25px;
+    @media (max-width:767px) {
+      left: 30px;
+      right: 30px;
+      font-size: 16px;
+    }
   }
 }
